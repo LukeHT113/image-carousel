@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lht/carousel",
+  "version": "0.1.0",
+  "title": "Image Carousel",
+  "category": "design",
+  "icon": "dashicons-images-alt2",
+  "description": "A simple image carousel",
+  "attributes": {
+    "gap": {
+      "type": "number",
+      "default": 16
+    },
+    "yMargin": {
+      "type": "number",
+      "default": 16
+    },
+    "slidesToShow": {
+      "type": "number",
+      "default": 3
+    },
+    "speed": {
+      "type": "number",
+      "default": 300
+    },
+    "reverse": {
+      "type": "boolean",
+      "default": false
+    },
+    "arrows": {
+      "type": "boolean",
+      "default": false
+    },
+    "dots": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplaySpeed": {
+      "type": "number",
+      "default": 3000
+    },
+    "responsiveWidth": {
+      "type": "number",
+      "default": 600
+    },
+    "responsiveSlidesToShow": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false
+  },
+  "textdomain": "image-carousel",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

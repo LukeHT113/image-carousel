@@ -1,0 +1,238 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+:root {
+  --lht-carousel-gap: 16px;
+  --lht-carousel-y-margin: 16px;
+}
+
+
+.lht-carousel-gap-0 {
+  --lht-carousel-gap: 0px;
+}
+.lht-carousel-gap-4 {
+  --lht-carousel-gap: 4px;
+}
+.lht-carousel-gap-8 {
+  --lht-carousel-gap: 8px;
+}
+.lht-carousel-gap-12 {
+  --lht-carousel-gap: 12px;
+}
+.lht-carousel-gap-16 {
+  --lht-carousel-gap: 16px;
+}
+.lht-carousel-gap-20 {
+  --lht-carousel-gap: 20px;
+}
+.lht-carousel-gap-24 {
+  --lht-carousel-gap: 24px;
+}
+.lht-carousel-gap-28 {
+  --lht-carousel-gap: 28px;
+}
+.lht-carousel-gap-32 {
+  --lht-carousel-gap: 32px;
+}
+
+.lht-carousel-y-margin-0 {
+  --lht-carousel-y-margin: 0px
+}
+.lht-carousel-y-margin-4 {
+  --lht-carousel-y-margin: 4px
+}
+.lht-carousel-y-margin-8 {
+  --lht-carousel-y-margin: 8px
+}
+.lht-carousel-y-margin-12 {
+  --lht-carousel-y-margin: 12px
+}
+.lht-carousel-y-margin-16 {
+  --lht-carousel-y-margin: 16px
+}
+.lht-carousel-y-margin-20 {
+  --lht-carousel-y-margin: 20px
+}
+.lht-carousel-y-margin-24 {
+  --lht-carousel-y-margin: 24px
+}
+.lht-carousel-y-margin-28 {
+  --lht-carousel-y-margin: 28px
+}
+.lht-carousel-y-margin-32 {
+  --lht-carousel-y-margin: 32px
+}
+
+.wp-block-lht-carousel {
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  margin: var(--lht-carousel-y-margin) 0;
+}
+.wp-block-lht-slide {
+  transition: 0.3s ease-in-out transform;
+}
+.wp-block-lht-slide > figure {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wp-block-lht-slide .wp-block-image img {
+  height: 100%;
+  width: 100%;
+}
+.wp-block-lht-carousel>.wp-block-lht-slide:not(:first-child) {
+  margin-left: var(--lht-carousel-gap);
+}
+.lht-carousel-reverse {
+  flex-direction: row-reverse;
+}
+
+.lht-shows-1-slides .wp-block-lht-slide {
+  flex-basis: calc(100%) !important;
+  max-width: calc(100%) !important;
+  min-width: calc(100%) !important
+}
+
+.lht-shows-2-slides .wp-block-lht-slide {
+  flex-basis: calc(50% - var(--lht-carousel-gap)/2) !important;
+  max-width: calc(50% - var(--lht-carousel-gap)/2) !important;
+  min-width: calc(50% - var(--lht-carousel-gap)/2) !important
+}
+
+.lht-shows-3-slides .wp-block-lht-slide {
+  flex-basis: calc(33.33333% - var(--lht-carousel-gap)*2/3) !important;
+  max-width: calc(33.33333% - var(--lht-carousel-gap)*2/3) !important;
+  min-width: calc(33.33333% - var(--lht-carousel-gap)*2/3) !important
+}
+
+.lht-shows-4-slides .wp-block-lht-slide {
+  flex-basis: calc(25% - var(--lht-carousel-gap)*3/4) !important;
+  max-width: calc(25% - var(--lht-carousel-gap)*3/4) !important;
+  min-width: calc(25% - var(--lht-carousel-gap)*3/4) !important
+}
+
+.lht-shows-5-slides .wp-block-lht-slide {
+  flex-basis: calc(20% - var(--lht-carousel-gap)*4/5) !important;
+  max-width: calc(20% - var(--lht-carousel-gap)*4/5) !important;
+  min-width: calc(20% - var(--lht-carousel-gap)*4/5) !important
+}
+
+.lht-shows-6-slides .wp-block-lht-slide {
+  flex-basis: calc(16.66667% - var(--lht-carousel-gap)*5/6) !important;
+  max-width: calc(16.66667% - var(--lht-carousel-gap)*5/6) !important;
+  min-width: calc(16.66667% - var(--lht-carousel-gap)*5/6) !important
+}
+
+.lht-shows-7-slides .wp-block-lht-slide {
+  flex-basis: calc(14.28571% - var(--lht-carousel-gap)*6/7) !important;
+  max-width: calc(14.28571% - var(--lht-carousel-gap)*6/7) !important;
+  min-width: calc(14.28571% - var(--lht-carousel-gap)*6/7) !important
+}
+
+.lht-shows-8-slides .wp-block-lht-slide {
+  flex-basis: calc(12.5% - var(--lht-carousel-gap)*7/8) !important;
+  max-width: calc(12.5% - var(--lht-carousel-gap)*7/8) !important;
+  min-width: calc(12.5% - var(--lht-carousel-gap)*7/8) !important
+}
+
+.lht-shows-9-slides .wp-block-lht-slide {
+  flex-basis: calc(11.11111% - var(--lht-carousel-gap)*8/9) !important;
+  max-width: calc(11.11111% - var(--lht-carousel-gap)*8/9) !important;
+  min-width: calc(11.11111% - var(--lht-carousel-gap)*8/9) !important
+}
+
+.lht-shows-10-slides .wp-block-lht-slide {
+  flex-basis: calc(10% - var(--lht-carousel-gap)*9/10) !important;
+  max-width: calc(10% - var(--lht-carousel-gap)*9/10) !important;
+  min-width: calc(10% - var(--lht-carousel-gap)*9/10) !important
+}
+// Dots
+.wp-block-lht-carousel:has( > .lht-carousel-dots) {
+  position: relative;
+  padding-bottom: 32px;
+}
+.lht-carousel-dots {
+  position: absolute;
+  bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+.lht-carousel-reverse .lht-carousel-dots {
+  flex-direction: row-reverse;
+}
+
+.lht-carousel-dots .lht-dot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  height: 24px;
+  width: 28px;
+  background: none;
+  cursor: pointer;
+}
+
+.lht-carousel-dots .dot-svg{
+  height: 16px;
+  width: 16px;
+  fill: grey;
+}
+.lht-carousel-dots button:hover .dot-svg{
+  fill: black;
+}
+.active-dot .dot-svg {
+  fill: black;
+}
+// Arrows
+.wp-block-lht-carousel:has( > .lht-carousel-arrow-next) {
+  position: relative;
+  padding-bottom: 32px;
+}
+.lht-carousel-arrow-prev {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+.lht-carousel-arrow-next {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.lht-carousel-arrow-next svg,
+.lht-carousel-arrow-prev svg {
+  fill: grey;
+  height: 100%;
+  width: 100%;
+}
+
+.lht-carousel-arrow-next:hover svg,
+.lht-carousel-arrow-prev:hover svg {
+  cursor: pointer;
+  fill: black;
+}

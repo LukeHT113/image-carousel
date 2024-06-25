@@ -1,0 +1,134 @@
+/*!*************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/carousel/editor.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-lht-carousel {
+  display: block;
+  visibility: visible !important;
+}
+
+.wp-block-lht-carousel > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  min-height: 100px;
+  padding: 2px;
+}
+
+.wp-block-lht-carousel > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="lht/slide"] {
+  flex: 1;
+  flex-basis: 100%;
+  margin-bottom: 0 !important;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0 !important;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.wp-block-lht-carousel > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="lht/slide"]:not(:first-child) {
+  margin-left: var(--lht-carousel-gap);
+}
+
+.wp-block-lht-carousel > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="lht/slide"] .block-editor-block-list__layout,
+.wp-block-lht-carousel > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="lht/slide"] .block-editor-inner-blocks {
+  height: 100%;
+}
+
+.wp-block-lht-carousel > .block-editor-inner-blocks > .block-editor-block-list__layout > .block-list-appender {
+  align-self: flex-start !important;
+  list-style: none !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+  position: static !important;
+  z-index: 2;
+}
+
+.wp-block-lht-carousel > .block-editor-inner-blocks > .block-editor-block-list__layout > .block-list-appender .components-button svg {
+  margin: 0 !important;
+}
+
+.wp-block-lht-carousel > .block-editor-inner-blocks > .block-editor-block-list__layout .wp-block {
+  max-width: inherit;
+}
+
+.wp-block-lht-carousel.has-child-selected > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="lht/slide"] > .block-editor-inner-blocks > .block-editor-block-list__layout > :nth-last-child(2),
+.wp-block-lht-carousel.is-selected > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="lht/slide"] > .block-editor-inner-blocks > .block-editor-block-list__layout > :nth-last-child(2),
+.wp-block-lht-carousel > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="lht/slide"] > .block-editor-inner-blocks > .block-editor-block-list__layout > :last-child:not(.block-list-appender) {
+  margin-bottom: 0;
+}
+
+.wp-block-lht-carousel > .block-editor-inner-blocks > .block-editor-block-list__layout::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.38);
+  border-radius: 4px;
+}
+
+.wp-block-lht-carousel > .block-editor-inner-blocks > .block-editor-block-list__layout::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.48);
+}
+
+.wp-block-lht-carousel > .block-editor-inner-blocks > .block-editor-block-list__layout > .block-list-appender {
+  margin-left: var(--lht-carousel-gap);
+}
+
+.lht-shows-2-slides .block-editor-inner-blocks > .block-editor-block-list__layout .wp-block-lht-slide {
+  flex-basis: calc(50% - var(--lht-carousel-gap) / 2) !important;
+  max-width: calc(50% - var(--lht-carousel-gap) / 2) !important;
+  min-width: calc(50% - var(--lht-carousel-gap) / 2) !important;
+}
+
+.lht-shows-3-slides .block-editor-inner-blocks > .block-editor-block-list__layout .wp-block-lht-slide {
+  flex-basis: calc(33.33333% - var(--lht-carousel-gap) * 2 / 3) !important;
+  max-width: calc(33.33333% - var(--lht-carousel-gap) * 2 / 3) !important;
+  min-width: calc(33.33333% - var(--lht-carousel-gap) * 2 / 3) !important;
+}
+
+.lht-shows-4-slides .block-editor-inner-blocks > .block-editor-block-list__layout .wp-block-lht-slide {
+  flex-basis: calc(25% - var(--lht-carousel-gap) * 3 / 4) !important;
+  max-width: calc(25% - var(--lht-carousel-gap) * 3 / 4) !important;
+  min-width: calc(25% - var(--lht-carousel-gap) * 3 / 4) !important;
+}
+
+.lht-shows-5-slides .block-editor-inner-blocks > .block-editor-block-list__layout .wp-block-lht-slide {
+  flex-basis: calc(20% - var(--lht-carousel-gap) * 4 / 5) !important;
+  max-width: calc(20% - var(--lht-carousel-gap) * 4 / 5) !important;
+  min-width: calc(20% - var(--lht-carousel-gap) * 4 / 5) !important;
+}
+
+.lht-shows-6-slides .block-editor-inner-blocks > .block-editor-block-list__layout .wp-block-lht-slide {
+  flex-basis: calc(16.66667% - var(--lht-carousel-gap) * 5 / 6) !important;
+  max-width: calc(16.66667% - var(--lht-carousel-gap) * 5 / 6) !important;
+  min-width: calc(16.66667% - var(--lht-carousel-gap) * 5 / 6) !important;
+}
+
+.lht-shows-7-slides .block-editor-inner-blocks > .block-editor-block-list__layout .wp-block-lht-slide {
+  flex-basis: calc(14.28571% - var(--lht-carousel-gap) * 6 / 7) !important;
+  max-width: calc(14.28571% - var(--lht-carousel-gap) * 6 / 7) !important;
+  min-width: calc(14.28571% - var(--lht-carousel-gap) * 6 / 7) !important;
+}
+
+.lht-shows-8-slides .block-editor-inner-blocks > .block-editor-block-list__layout .wp-block-lht-slide {
+  flex-basis: calc(12.5% - var(--lht-carousel-gap) * 7 / 8) !important;
+  max-width: calc(12.5% - var(--lht-carousel-gap) * 7 / 8) !important;
+  min-width: calc(12.5% - var(--lht-carousel-gap) * 7 / 8) !important;
+}
+
+.lht-shows-9-slides .block-editor-inner-blocks > .block-editor-block-list__layout .wp-block-lht-slide {
+  flex-basis: calc(11.11111% - var(--lht-carousel-gap) * 8 / 9) !important;
+  max-width: calc(11.11111% - var(--lht-carousel-gap) * 8 / 9) !important;
+  min-width: calc(11.11111% - var(--lht-carousel-gap) * 8 / 9) !important;
+}
+
+.lht-shows-10-slides .block-editor-inner-blocks > .block-editor-block-list__layout .wp-block-lht-slide {
+  flex-basis: calc(10% - var(--lht-carousel-gap) * 9 / 10) !important;
+  max-width: calc(10% - var(--lht-carousel-gap) * 9 / 10) !important;
+  min-width: calc(10% - var(--lht-carousel-gap) * 9 / 10) !important;
+}
+
+/*# sourceMappingURL=index.css.map*/

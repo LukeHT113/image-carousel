@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lht/slide",
+  "version": "0.1.0",
+  "title": "Slide",
+  "parent": [
+    "lht/carousel"
+  ],
+  "category": "design",
+  "icon": "dashicons-format-image",
+  "description": "A single slide within a carousel",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "image-carousel",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "render": "file:./render.php"
+}
